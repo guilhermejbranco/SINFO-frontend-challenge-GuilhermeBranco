@@ -3,8 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <title>Mercedes-Benz.io Frontend Developer Challenge for SINFO</title>
+  <!-- CSS IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/css/lory.css" />
 </head>
-<body>
+<body onresize="onresize()">
+
+<div class="slider js_multislides multislides">
+    <div class="frame js_frame">
+        <ul class="slides js_slides">
+            <li class="js_slide">
+            	<img src="./images/img1.png">
+           		<span class="product_title">Product 1 Title</span>
+           		<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(1)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant1">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(1)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price1">39.90<span>€</span></div>
+           		</div>
+            </li>
+            <li class="js_slide">
+            	<img src="./images/img2.png">
+            	<span class="product_title">Product 2 Title</span>
+            	<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(2)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant2">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(2)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price2">104.90<span> €</span></div>
+           		</div>
+            </li>
+            <li class="js_slide">
+            	<img src="./images/img3.png">
+            	<span class="product_title">Product 3 Title</span>
+            	<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(3)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant3">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(3)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price3">4.50<span> €</span></div>
+           		</div>
+            </li>
+            <li class="js_slide">
+            	<img src="./images/img4.png">
+            	<span class="product_title">Product 4 Title</span>
+            	<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(4)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant4">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(4)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price4">39.9<span> €</span></div>
+           		</div>
+            </li>
+            <li class="js_slide">
+            	<img src="./images/img5.png">
+            	<span class="product_title">Product 5 Title</span>
+            	<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(5)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant5">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(5)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price5">39.9<span> €</span></div>
+           		</div>
+            </li>
+            <li class="js_slide">
+            	<img src="./images/img6.png">
+            	<span class="product_title">Product 6 Title</span>
+            	<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(6)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant6">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(6)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price6">39.9<span> €</span></div>
+           		</div>
+            </li>
+            <li class="js_slide">
+            	<img src="./images/img7.png">
+            	<span class="product_title">Product 7 Title</span>
+            	<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(7)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant7">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(7)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price7">39.9<span> €</span></div>
+           		</div>
+            </li>
+            <li class="js_slide">
+            	<img src="./images/img8.png">
+            	<span class="product_title">Product 8 Title</span>
+            	<span class="product_description">
+           			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt vitae urna sed gravida. Ut semper lectus ex, ac blandit ipsum interdum sed.
+           		</span>
+           		<div class="wrapper">
+           			<button class="child minus_wrapper" onclick="minusFunction(8)"><img class="minus" src="./images/minus.svg"></button>
+           			<div class="child quantity_wrapper"><span class="quantity" id="quant8">0</span></div>
+           			<button class="child plus_wrapper" onclick="plusFunction(8)"><img class="plus" src="./images/plus.svg"></button>
+        			<div class="price" id="price8">39.9<span> €</span></div>
+           		</div>
+            </li>
+        </ul>
+    </div>
+    <span class="js_prev prev">
+        <img src="./images/prev.svg">
+    </span>
+    <span class="js_next next">
+        <img src="./images/next.svg">
+    </span>
+    <div class="total" id="total">Total: <span>0.00</span>€</div>
+</div>
 
 </body>
+  <!-- JS IMPORTS -->
+<script src="./vendor/js/lory.js"></script>
+<script src="./vendor/js/loryoptions.js"></script>
+<script src="main.js"></script>
+
 </html>

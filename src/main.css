@@ -1,0 +1,76 @@
+/*Font Variables*/
+/*Quantity Variables*/
+body {
+  background-color: #000;
+  font-family: "Helvetica", sans-serif;
+  color: #fff; }
+
+.product_title {
+  font-size: 16px;
+  line-height: 20px;
+  float: left;
+  margin-top: 15px; }
+
+.product_description {
+  font-size: 12px;
+  line-height: 16px;
+  float: left;
+  margin-top: 15px;
+  white-space: normal; }
+
+.wrapper {
+  margin-top: 25%;
+  float: left;
+  width: 100%; }
+
+.child {
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  float: left; }
+
+.minus_wrapper {
+  background-color: #00adef;
+  padding: 0;
+  border: none; }
+
+.plus_wrapper {
+  background-color: #00adef;
+  padding: 0;
+  border: none; }
+
+.minus_wrapper:hover {
+  background-color: #0088c6; }
+
+.plus_wrapper:hover {
+  background-color: #0088c6; }
+
+.quantity_wrapper {
+  font-size: 16px;
+  color: #000;
+  background-color: #fff; }
+
+.quantity {
+  float: right;
+  margin: 25%;
+  margin-top: 16px; }
+
+.minus {
+  width: 10px;
+  margin: 10px; }
+
+.plus {
+  width: 10px;
+  margin: 10px; }
+
+.price {
+  color: #fff;
+  font-size: 18px;
+  float: right;
+  margin-top: 18px; }
+
+.total {
+  position: absolute;
+  font-size: 18px;
+  line-height: 24px;
+  right: 112px; }

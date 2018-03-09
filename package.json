@@ -5,16 +5,30 @@
   "author": "",
   "license": "UNLICENSED",
   "private": true,
+  "watch": {
+    "test": "{src,test}/*js"
+  },
   "scripts": {
     "dev": "npm run serve",
     "build": "",
     "serve": "http-server ./src -s -c-1 -a localhost -o",
-    "postinstall": "npm run dev"
+    "postinstall": "npm run dev",
+    "test": "tape test/*.js",
+    "watch": "npm-watch",
+    "scss:lory": "node-sass --include-path scss ./src/vendor/scss/lory.scss ./src/vendor/css/lory.css",
+    "scss:main": "node-sass --include-path scss ./src/scss/main.scss ./src/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run scss:lory\" | nodemon -e scss -x \"npm run scss:main\""
   },
   "devDependencies": {
-    "http-server": "^0.9.0"
+    "http-server": "^0.9.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lory.js": "^2.4.1",
+    "npm-watch": "^0.3.0",
+    "tape": "^4.9.0"
+  },
   "engines": {
     "node": ">=6.0.0"
   }

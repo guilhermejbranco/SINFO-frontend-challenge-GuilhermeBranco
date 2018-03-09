@@ -143,3 +143,4 @@ Please describe the issue(s), steps to reproduce, screenshots and error logs of 
 When finished, prepare a zip archive with your solution and send it back as an email to the person you are in contact with. *PLEASE DO NOT INCLUDE THE `node_modules` folder*.
 
 Good luck :-)
+# SINFO-frontend-challenge-Guilherme-Branco
